@@ -14,7 +14,7 @@ void setup() {
 void loop() {
 
   // Bluetooth -> Arduino
-  if (bluetooth.available()) {
+  if (bluetooth.available()>0) {
     char data = bluetooth.read();
 
     Serial.print("Received: ");
